@@ -1,0 +1,6 @@
+.buy-btn {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0px);
+}

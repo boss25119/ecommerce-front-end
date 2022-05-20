@@ -17,9 +17,12 @@ const handleCart = (state = cart, action) => {
         
 
         case "DELETE_ITEM": 
-            return state = state.filter((x) => {
-                return x.id !== product.id
+            return state = state.filter((item) => {
+                // return item.id !== product.id
+                console.log("delete", item.id)
             })
+           
+            
         break;
         default:
             return state;

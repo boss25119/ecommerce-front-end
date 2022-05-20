@@ -11,12 +11,12 @@ export default function Product() {
 
     const dispatch = useDispatch();
     const handleCart = (product) => {
-        if (cartBtn === "Add to cart"){
+        if (cartBtn === "Add to Cart"){
             dispatch(addCart(product))
             setCartBtn("Remove from cart")
         }else {
             dispatch(deleteCart(product))
-            setCartBtn("Add to cart")
+            setCartBtn("Add to Cart")
         }
     }
     // console.log("hello")

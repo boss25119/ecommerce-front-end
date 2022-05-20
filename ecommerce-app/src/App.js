@@ -5,6 +5,7 @@ import './App.css';
 import Products from './Components/Products';
 import Product from './Components/Product'
 import Cart from './Components/Cart'
+import CheckOut from './Components/CheckOut'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path = "/products" element = {<Products/>} />
         <Route exact path = "/products/:id" element = {<Product/>} />
         <Route exact path = "/cart" element = {<Cart/>} />
+        <Route exact path = "/checkout" element = {<CheckOut/>} />
       </Routes>
     </div>
   );

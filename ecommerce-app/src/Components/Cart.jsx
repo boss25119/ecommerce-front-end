@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import {deleteCart} from '../redux/action'
 import {NavLink} from 'react-router-dom'
-
+import EmptyCart from './EmptyCart'
 const Cart = () => {
     
     const state = useSelector((state) => state.handleCart)
@@ -32,15 +32,7 @@ const Cart = () => {
         )
     }
 
-    const emptyCart = () => {
-        return(
-            <div className="px-4 my-5 bg-light rounded-3">
-                <h2 className ="lead fw-bold">Your card is empty</h2>
-                <NavLink className="nav-link" to="/products">Click here to comeback to Products page</NavLink>
-            </div>
-
-        )
-    }
+    
     const checkOutBtn = () => {
         return (
             <div className="container float-left">
@@ -52,7 +44,7 @@ const Cart = () => {
     }
    return (
       <>
-        { state.length === 0 && emptyCart()}
+        { state.length === 0 && EmptyCart()}
         { state.length !==0 && state.map(cartItems)}
         {state.length !==0 && checkOutBtn()}
       </>

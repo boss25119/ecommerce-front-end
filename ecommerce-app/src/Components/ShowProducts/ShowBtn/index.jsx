@@ -2,7 +2,7 @@ import './BuyBtn.css'
 
 function ShowBtn(props) {
     const filterProduct = (cat) => {
-        const updatedList = props.data.filter((x) => x.category === cat)
+        const updatedList = props.data.filter((item) => item.category === cat)
         props.setFilter(updatedList)
         console.log("props.data", props.data)
     }

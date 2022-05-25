@@ -19,7 +19,7 @@ export default function Product() {
             setCartBtn("Add to Cart")
         }
     }
-    // console.log("hello")
+    
     useEffect(() => {
         const getProduct = async() => {
              setLoading(true)

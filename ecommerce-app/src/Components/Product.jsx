@@ -23,7 +23,7 @@ export default function Product() {
     useEffect(() => {
         const getProduct = async() => {
              setLoading(true)
-             const response = await fetch(`https://fakestoreapi.com/products/${id}`)
+             const response = await fetch(`http://localhost:8080/products/${id}`)
              setProduct(await response.json())
              setLoading(false)
         }

@@ -1,0 +1,77 @@
+
+.login-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h2{
+    margin-top: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 392px;
+    margin-bottom: 170px;
+}
+
+
+.text_input{
+    margin-top: 1.2rem;
+    font-size: 20px;
+    width: 80%;
+}
+
+.eye-slash-icon{
+    top: 233px;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}
+.btn-login{
+    margin-top: 4rem;
+    width: 165px;
+    height: 60px;
+    border-radius: 30px;
+    background: #008CBA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    /* box-shadow: 0 4px 8px 0 rgba(181, 141, 237, 0.7), 0 6px 20px 0 rgba(181, 141, 237, 0.9); 
+    cursor: pointer; */
+}
+
+.login{
+    background: #FFFFFF;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 485px;
+    height: 570px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    margin-top: 10%;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sign-up{
+    color: #0E4579;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
